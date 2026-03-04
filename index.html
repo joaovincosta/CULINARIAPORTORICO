@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Culinária Porto-riquenha</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="img/Flag_of_Puerto_Rico_.svg.png" type="image/x-icon">
+    </head>
+<body>
+    <header class="cabecalho">
+        <div class="divlogo">
+            <img src="img/Flag_of_Puerto_Rico_.svg.png" class="logo">
+        </div>
+        <nav id="menu">
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <ul>
+            <li>
+              <a href="#historia" onclick="document.getElementById('menu-toggle').click()">História</a>
+            </li>
+            <li>
+              <a href="#pratosprincipais" onclick="document.getElementById('menu-toggle').click()">Pratos Principais</a>
+            </li>
+            <li>
+              <a href="#bebidas" onclick="document.getElementById('menu-toggle').click()">Bebidas</a>
+            </li>
+            <li>
+              <a href="#sobremesas" onclick="document.getElementById('menu-toggle').click()">Sobremesas</a>
+            </li>
+            <li>
+              <a href="#contato" onclick="document.getElementById('menu-toggle').click()">Contato</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+          <h1 class="titulo">Culinária de Porto Rico</h1>
+          <img class="bg-image" src="img/Flag_of_Puerto_Rico.png" alt="bandeira de Porto Rico">
+        </section>
+        <section class="a" id="historia">
+          <h2 class="titulos">História</h2>
+          <p>
+            The Good Place é uma série de televisão de comédia fantasiosa criada por Michael Schur, um dos roteiristas e produtores de "sitcoms" mais influentes da TV americana. Ela estreou na NBC em 19 de setembro de 2016 e foi concluída em 30 de janeiro de 2020, após quatro temporadas e 53 episódios. No Brasil, foi transmitida pela Netflix. <a href="https://pt.wikipedia.org/wiki/The_Good_Place" target="_blank"> Saiba mais</a>
+          </p>
+        </section>
+        <section class="b" id="pratosprincipais">
+          <h2 class="titulos">Pratos Principais</h2>
+          <div class="cards">
+            <div class="card">
+              <img class="imgcard" src="img/Flag_of_Puerto_Rico_.svg.png" alt=""> 
+              <p>“Hilário, instigante e ridiculamente bobo, How to Be Perfect é uma ótima leitura para quem amou The Good Place - ou para quem quer ser uma boa pessoa.” — Jake Tapper, âncora da CNN</p>
+            </div>
+            <div class="card">
+              <img class="imgcard" src="img/Flag_of_Puerto_Rico_.svg.png" alt="">
+              <p>“Um guia divertido e barulhento para a vida moral. Se você quer se tornar moralmente melhor e não se importa em ser entretido no processo, você escolheu o livro certo.” —Jeff McMahan, professor de filosofia de Oxford</p>
+            </div>
+            <div class="card">
+              <img class="imgcard" src="img/Flag_of_Puerto_Rico_.svg.png" alt="">
+              <p>“Este livro ajudará a guiá-lo através dos enigmas morais mais espinhosos com clareza e hilaridade, e aumentará muito suas chances de acabar no... Bom Lugar.” —Kristen Bell</p>
+            </div>
+          </div>
+        </section>
+        <section class="a" id="bebidas">
+          <h2 class="titulos">Bebidas</h2>
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/1.png" style="width:100%">
+                <div class="text">Pina Colada</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/2.png" style="width:100%">
+                <div class="text">Pirroto</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/3.png" style="width:100%">
+                <div class="text">Coquito</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+        <section class="b" id="sobremesas">
+          <h2 class="titulos">Sobremesas</h2>
+          <div class="cards">
+            <div class="card">
+              <img class="imgcard" src="img/Flag_of_Puerto_Rico_.svg.png" alt=""> 
+              <p>“Hilário, instigante e ridiculamente bobo, How to Be Perfect é uma ótima leitura para quem amou The Good Place - ou para quem quer ser uma boa pessoa.” — Jake Tapper, âncora da CNN</p>
+            </div>
+            <div class="card">
+              <img class="imgcard" src="img/Flag_of_Puerto_Rico_.svg.png" alt="">
+              <p>“Um guia divertido e barulhento para a vida moral. Se você quer se tornar moralmente melhor e não se importa em ser entretido no processo, você escolheu o livro certo.” —Jeff McMahan, professor de filosofia de Oxford</p>
+            </div>
+            <div class="card">
+              <img class="imgcard" src="img/Flag_of_Puerto_Rico_.svg.png" alt="">
+              <p>“Este livro ajudará a guiá-lo através dos enigmas morais mais espinhosos com clareza e hilaridade, e aumentará muito suas chances de acabar no... Bom Lugar.” —Kristen Bell</p>
+            </div>
+          </div>
+        </section>
+        <section class="a" id="contato">
+        <h2 class="titulos">Contato</h2>
+        <div class="responsive-form">
+            <form action="/action_page.php">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Escreva seu nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Escreva seu e-mail">
+                    
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" placeholder="Escreva-nos feedbacks!"></textarea>
+
+                    <input type="submit" value="Enviar">
+            </form>
+        </div>
+        </section>
+    </main>
+    <footer class="rodape">
+          <p>© 2026 Culinária dos Países. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
