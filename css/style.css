@@ -6,8 +6,6 @@ body{
     font-style:normal;
 }
 
-
-
 html {
     scroll-behavior: smooth;
 }
@@ -72,6 +70,8 @@ nav ul li {
   font-family: "Major Mono Display", monospace;
   font-weight: 400;
   font-style: normal;
+  font-size: 6em;
+  color: #ffffff;
 }
 
 .titulos{
@@ -80,9 +80,10 @@ nav ul li {
     font-weight: bold;
     font-family: "League Gothic", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+    font-size: 2.5em;
 }
 h1{
     font-size: 2.5em;
@@ -90,20 +91,34 @@ h1{
 h2{
     font-size: 1.5em;
 }
-p{
-    line-height: 1.5;
-    font-size: 1.2em;
+h3{
+    line-height: 1;
+    font-size: 1em;
     padding-left: 15px;
     padding-right: 15px;
-    font-family: "Koulen", sans-serif;
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+p{
+    line-height: 1.5;
+    font-size: 1.5em;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 ul li{
     line-height: 1.5;
-    font-size: 1.2em;
+    font-size: 2em;
     padding-left: 15px;
     padding-right: 15px;
+    font-family: "League Gothic", sans-serif;
 }
 
 .logo{
@@ -264,15 +279,21 @@ input {
   background-color: rgba(0,0,0,0.8);
 }
 
-.text {
-  color: #ffffff;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+.container{
+  position: relative;
+  max-width: 960px;
+  margin: 0; 
 }
+
+.container .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+  }
 
 .numbertext {
   color: #f2f2f2;
@@ -307,7 +328,6 @@ input {
   to {opacity: 1}
 }
 
-/* ===== FORMULÁRIO ===== */
 
 .responsive-form {
     max-width: 600px;
