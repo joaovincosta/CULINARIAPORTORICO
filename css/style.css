@@ -1,9 +1,14 @@
 body{
-    background-color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif ; font-size: 150%;
+    background-color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 150%;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight:weight;
     font-style:normal;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 html {
@@ -15,6 +20,7 @@ section {
 }
 
 header{
+    box-sizing: border-box;
     background-color: #840000;
     padding: 3%;
     display: flex; 
@@ -61,6 +67,10 @@ nav ul li {
     padding: 3%;
 }
 
+.container-tittle {
+    position: relative;
+}
+
 .titulo {
   position: absolute;
   text-align: center;
@@ -70,7 +80,7 @@ nav ul li {
   font-family: "Major Mono Display", monospace;
   font-weight: 400;
   font-style: normal;
-  font-size: 6em;
+  font-size: 10vw;
   color: #ffffff;
 }
 
@@ -83,7 +93,7 @@ nav ul li {
     font-weight: 700;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    font-size: 2.5em;
+    font-size: 3.5vw;
 }
 h1{
     font-size: 2.5em;
@@ -195,7 +205,21 @@ img{
     .card {
         width: calc(100% - 20px);
     }
+
+    /* .titulo {
+        position: absolute;
+        text-align: justify;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Major Mono Display", monospace;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 3em;
+        color: #ffffff;
+    } */
 }
+
 
 @media screen and (max-width: 1382px) {
     .menu-icon {
@@ -209,7 +233,7 @@ img{
         width: 100%;
         background-color: #840000;
         position: absolute;
-        top: 150px;
+        /* top: 150px; */
         left: 0;
         z-index: 1;
         padding: 0;
@@ -219,16 +243,16 @@ img{
         display: flex;
     }
 
-    nav ul li {
+    nav ul li h1{
         text-align: center;
         margin: 0;
     }
 
-    nav ul li a {
+    nav ul li a h1{
         padding: 15px 0;
     }
 
-    nav ul li label {
+    nav ul li label h1 {
         /* width: 100%; */
         display: block;
     }
@@ -287,7 +311,7 @@ input {
 
 .container{
   position: relative;
-  max-width: 960px;
+  max-width: 100%;
   margin: 0; 
 }
 
