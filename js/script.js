@@ -24,3 +24,43 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+// modal
+document.addEventListener("DOMContentLoaded", function(){
+
+  const modal = document.getElementById("foodModal");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalText = document.getElementById("modalText");
+
+  const cards = document.querySelectorAll(".modal-trigger");
+  const closeBtn = document.querySelector(".close");
+
+  cards.forEach(card => {
+
+    card.addEventListener("click", () => {
+
+      const title = card.dataset.title;
+
+      const template = card.querySelector(".modal-data");
+      const content = template ? template.innerHTML : "";
+
+      modalTitle.textContent = title;
+      modalText.innerHTML = content;
+
+      modal.style.display = "block";
+
+    });
+
+  });
+
+  closeBtn.onclick = function(){
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event){
+    if(event.target === modal){
+      modal.style.display = "none";
+    }
+  }
+
+});
