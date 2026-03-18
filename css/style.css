@@ -16,7 +16,7 @@ html {
 }
 
 section {
-    scroll-margin-top: 150px;
+    scroll-margin-top: 9vh;
 }
 
 header{
@@ -71,6 +71,21 @@ nav ul li {
     position: relative;
 }
 
+.float {
+    float: right; 
+    width: 45%; 
+    padding-left: 5%;
+    padding-right: 5%; 
+    padding-bottom: 2%;
+}
+
+.abraco {
+    line-height: 1.5; 
+    font-size: 1.2em; 
+    padding-left: 15px; 
+    padding-right: 15px;
+} 
+
 .titulo {
   position: absolute;
   text-align: center;
@@ -93,7 +108,7 @@ nav ul li {
     font-weight: 700;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    font-size: 3.5vw;
+    font-size: 2em;
 }
 h1{
     font-size: 2.5em;
@@ -122,6 +137,7 @@ p{
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+    text-align: justify;
 }
 ul li{
     line-height: 1.5;
@@ -201,25 +217,18 @@ img{
     border-radius: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
 @media screen and (max-width: 850px) {
     .card {
         width: calc(100% - 20px);
     }
-
-    /* .titulo {
-        position: absolute;
-        text-align: justify;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: "Major Mono Display", monospace;
-        font-weight: 300;
-        font-style: normal;
-        font-size: 3em;
-        color: #ffffff;
-    } */
 }
-
 
 @media screen and (max-width: 1382px) {
     .menu-icon {
@@ -411,6 +420,11 @@ input {
     transform: translateY(-2px);
 }
 
+ol {
+  list-style: decimal;
+  padding-left: 30px;
+}
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -426,18 +440,38 @@ input {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  background-image: linear-gradient(to bottom right, #5785a3, #0e60be);
+  margin: 10% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content p{
+  font-size: 25px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.modal-content ul{
+  padding-left: 10px;
+}
+
+.modal-content li{
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.modal-content h2{
+  text-align: center;
+  margin-bottom: 1px;
 }
 
 /* The Close Button */
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 9vh;
   font-weight: bold;
 }
 
